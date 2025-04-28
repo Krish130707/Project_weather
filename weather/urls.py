@@ -6,6 +6,7 @@ app_name = 'weather'
 urlpatterns = [
     # Page URLs
     path('', views.index, name='index'), # Home page remains at the app root
+    path('about/', views.about, name='about'), # About page URL
     # NEW: Detail page URL, takes city name
     path('detail/<str:city_name>/', views.weather_detail, name='weather_detail'),
     # NEW: Dedicated login/signup page URLs

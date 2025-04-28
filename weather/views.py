@@ -123,12 +123,20 @@ def _get_weather_for_city(city):
 
 
 # --- Page Views ---
+@login_required
 def index(request):
-    """Renders the main index.html page (home page)."""
+    """Renders the main index.html page (home page). Requires login."""
     # We'll fetch initial weather via JS now to keep page load fast
     # Or pass a default city's data if desired
     context = {'csrf_token': get_token(request)}
     return render(request, 'weather/index.html', context)
+
+def about(request):
+    """Renders the about page."""
+    context = {
+        'current_year': datetime.now().year # For footer
+    }
+    return render(request, 'weather/about.html', context)
 
 # @login_required # Optional: uncomment if details should be private
 def weather_detail(request, city_name):
