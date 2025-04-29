@@ -250,7 +250,6 @@ def get_weather_data_api(request):
         'city_info': weather_info.get('city_info'), # Include coordinates for map
         'warning': weather_info.get('warning') # Pass along non-critical warnings
     })
-
 # --- Authentication API Views (No longer needed if using dedicated pages/forms) ---
 # You can COMMENT OUT or DELETE the old signup_view, login_view API endpoints
 # as the new pages handle this via standard Django form processing.

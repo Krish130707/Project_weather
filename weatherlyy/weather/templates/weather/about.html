@@ -1,4 +1,5 @@
 {% extends 'weather/base.html' %}
+{% load static %}
 
 {% block title %}About Us - Weatherly{% endblock %}
 
@@ -25,7 +26,7 @@
                         <!-- Fallback for font awesome -->
                         ☁️
                     </div>
-                    <p class="font-semibold text-blue-700">Established 2024</p>
+                    <p class="font-semibold text-blue-700">Established 2025</p>
                 </div>
             </div>
         </div>
@@ -53,7 +54,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- Team Member 1 -->
             <div class="bg-white/50 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
-                <div class="h-32 bg-gradient-to-r from-blue-400 to-indigo-500"></div>
+                <img src="{% static 'images/divy.jpg' %}" alt="Divy" class="w-full h-64 object-cover">
                 <div class="p-4">
                     <h3 class="text-xl font-semibold text-gray-800">Divy</h3>
                     <p class="text-indigo-600 mb-2">Project Lead</p>
@@ -65,7 +66,7 @@
             
             <!-- Team Member 2 -->
             <div class="bg-white/50 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
-                <div class="h-32 bg-gradient-to-r from-indigo-400 to-purple-500"></div>
+                <img src="{% static 'images/mayank.jpg' %}" alt="Mayank" class="w-full h-64 object-cover">
                 <div class="p-4">
                     <h3 class="text-xl font-semibold text-gray-800">Mayank</h3>
                     <p class="text-indigo-600 mb-2">Backend Developer</p>
@@ -77,7 +78,7 @@
             
             <!-- Team Member 3 -->
             <div class="bg-white/50 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
-                <div class="h-32 bg-gradient-to-r from-purple-400 to-pink-500"></div>
+                <img src="{% static 'images/Krish.jpg' %}" alt="Krish" class="w-full h-64 object-cover">
                 <div class="p-4">
                     <h3 class="text-xl font-semibold text-gray-800">Krish</h3>
                     <p class="text-indigo-600 mb-2">Backend Developer</p>
@@ -89,7 +90,7 @@
             
             <!-- Team Member 4 -->
             <div class="bg-white/50 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
-                <div class="h-32 bg-gradient-to-r from-green-400 to-blue-500"></div>
+                <img src="{% static 'images/pratipalsinh.jpg' %}" alt="pratipal" class="w-full h-64 object-cover">
                 <div class="p-4">
                     <h3 class="text-xl font-semibold text-gray-800">Pratipal</h3>
                     <p class="text-indigo-600 mb-2">Frontend Developer</p>
