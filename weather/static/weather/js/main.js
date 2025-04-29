@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- State Variables ---
     let weatherChart = null; // Chart.js instance
     let debounceTimer;       // Timer for debouncing search (if implemented later)
-    let lastSearchedCity = localStorage.getItem('lastCity') || 'London'; // Default city or last searched
+    let lastSearchedCity = localStorage.getItem('lastCity') || 'surat'; // Default city or last searched
     let map = null; // Leaflet map instance
     let currentMarker = null; // Leaflet marker instance
 
